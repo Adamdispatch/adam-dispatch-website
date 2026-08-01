@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Dispatch LLC | Premium USA Freight Dispatching</title>
+    <!-- Tailwind CSS for Premium Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0F172A',
+                            accent: '#3B82F6',
+                            orange: '#F97316'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Glassmorphism Navbar */
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* Dark overlay for Hero Background */
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.95));
+        }
+        .hero-bg {
+            /* Replace with actual video if needed, using a premium truck image for V1 */
+            background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Premium Sticky Navbar -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-truck-fast text-brand-accent text-3xl"></i>
+                    <span class="text-white font-bold text-2xl tracking-tight">Adam Dispatch</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-gray-300 hover:text-white text-sm font-semibold transition-colors">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white text-sm font-semibold transition-colors">About</a>
+                    <a href="#services" class="text-gray-300 hover:text-white text-sm font-semibold transition-colors">Services</a>
+                    <a href="#trucks" class="text-gray-300 hover:text-white text-sm font-semibold transition-colors">Truck Types</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white text-sm font-semibold transition-colors">FAQ</a>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="hidden md:flex items-center">
+                    <a href="tel:+1234567890" class="bg-brand-accent hover:bg-blue-500 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all shadow-[0_0_15px_rgba(59,130,246,0.5)] flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center hero-bg">
+        <div class="absolute inset-0 hero-overlay"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
+                Maximize Your <span class="text-brand-accent">Revenue.</span><br>
+                Minimize Your <span class="text-brand-orange">Hassle.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto font-light">
+                Professional Truck Dispatch Services for Owner-Operators and Fleet Owners Across the United States.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-brand-orange hover:bg-orange-400 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2">
+                    Get Started <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="tel:+1234567890" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-brand-blue px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fa-solid fa-chevron-down text-white text-2xl opacity-70"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-brand-blue py-12 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-700">
+                <div class="p-4">
+                    <h3 class="text-4xl font-extrabold text-white mb-2">5+</h3>
+                    <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider">Years Experience</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-extrabold text-white mb-2">48</h3>
+                    <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider">States Coverage</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-extrabold text-white mb-2">24/7</h3>
+                    <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider">Live Support</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-extrabold text-brand-orange mb-2">Top</h3>
+                    <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider">Rate Negotiation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer for V1 -->
+    <footer class="bg-brand-blue py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                <i class="fa-solid fa-truck-fast text-brand-accent text-xl"></i>
+                <span class="text-white font-bold text-xl">Adam Dispatch LLC</span>
+            </div>
+            <p class="text-gray-500 text-sm mb-4">Empowering USA Trucking with Premium Dispatching Services.</p>
+            <div class="text-gray-600 text-xs">
+                &copy; 2026 Adam Dispatch LLC. All Rights Reserved. | <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
